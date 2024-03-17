@@ -1,12 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="常用命令        关闭docker 服务  systemctl stop docker    修改环境变量修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量  然后重启docker服务  systemctl da">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="常用命令        关闭docker 服务 systemctl stop docker     修改环境变量  修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量  然后重启docker服务  systemctl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker的一些命令">
 <meta property="og:url" content="https://blog.nyc1.xyz/2024/03/17/docker%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="NgaiYeanCoi&#39;s blog">
-<meta property="og:description" content="常用命令        关闭docker 服务  systemctl stop docker    修改环境变量修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量  然后重启docker服务  systemctl da">
+<meta property="og:description" content="常用命令        关闭docker 服务 systemctl stop docker     修改环境变量  修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量  然后重启docker服务  systemctl">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-17T13:38:07.000Z">
-<meta property="article:modified_time" content="2024-03-17T13:43:23.349Z">
+<meta property="article:modified_time" content="2024-03-17T13:57:21.303Z">
 <meta property="article:author" content="NgaiYeanCoi">
 <meta name="twitter:card" content="summary"><title>docker的一些命令 | NgaiYeanCoi's blog</title><link ref="canonical" href="https://blog.nyc1.xyz/2024/03/17/docker%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
 var CONFIG = {
@@ -36,33 +36,37 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
         <h2 id="常用命令"   >
           <a href="#常用命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2>
       <ol>
-<li><p>关闭docker 服务</p>
-<blockquote>
-<p>systemctl stop docker </p>
-</blockquote>
-</li>
-<li><p>修改环境变量<br>修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量</p>
-</li>
-<li><p>然后重启docker服务</p>
-<blockquote>
-<p>systemctl daemon-reload<br>systemctl restart docker</p>
+<li>关闭docker 服务<blockquote>
+<p>systemctl stop docker</p>
 </blockquote>
 </li>
 </ol>
-<p>4.查看环境变量</p>
+<ul>
+<li>修改环境变量</li>
+</ul>
+<p>修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量</p>
+<ul>
+<li><p>然后重启docker服务</p>
+<blockquote>
+<p>systemctl daemon-reload<br>systemctl restart docker  </p>
+</blockquote>
+</li>
+<li><p>查看环境变量</p>
 <blockquote>
 <p>docker exec -it [container-id] env</p>
 </blockquote>
-<p>5.查看Docker Root Dir: &#x2F;apps&#x2F;docker</p>
+</li>
+<li><p>查看Docker Root Dir: &#x2F;apps&#x2F;docker</p>
 <blockquote>
 <p>docker info</p>
 </blockquote>
-<ol start="2">
-<li>找到容器短id，再docker inspect [短id], 获取容器的长id：container-id<blockquote>
+</li>
+<li><p>找到容器短id，再docker inspect [短id], 获取容器的长id：container-id</p>
+<blockquote>
 <p>dokcer ps</p>
 </blockquote>
 </li>
-</ol>
+</ul>
 <p>修改容器配置信息</p>
 <blockquote>
 <p>vim var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json  </p>
