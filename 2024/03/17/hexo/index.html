@@ -6,7 +6,7 @@
 <meta property="og:description" content="init$ hexo init [folder]新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。 本命令相当于执行了以下几步： Git clone hexo-starter 和 hexo-theme-landscape 主题到当前目录或指定目录。使用 Yarn 1、pnpm 或 npm 包管理器下载依赖（如有已安装多个，则列在前面的优先）。npm 默认随 Node">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-17T12:43:44.000Z">
-<meta property="article:modified_time" content="2024-03-17T12:47:20.937Z">
+<meta property="article:modified_time" content="2024-03-17T12:52:21.149Z">
 <meta property="article:author" content="NgaiYeanCoi">
 <meta name="twitter:card" content="summary"><title>hexo | NgaiYeanCoi's blog</title><link ref="canonical" href="http://blog.stayrabbit.top/2024/03/17/hexo/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
 var CONFIG = {
@@ -39,6 +39,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
 <p>hexo new page –path about&#x2F;me “About me”<br>以上命令会创建一个 source&#x2F;about&#x2F;me.md 文件，同时 Front Matter 中的 title 为 “About me”</p>
 <p>注意！title 是必须指定的！如果你这么做并不能达到你的目的：</p>
 <p>hexo new page –path about&#x2F;me<br>此时 Hexo 会创建 source&#x2F;_posts&#x2F;about&#x2F;me.md，同时 me.md 的 Front Matter 中的 title 为 “page”。这是因为在上述命令中，hexo-cli 将 page 视为指定文章的标题、并采用默认的 layout。</p>
+<span id="more"></span>
 <p>generate<br>$ hexo generate<br>生成静态文件。</p>
 <p>选项	描述<br>-d, –deploy	文件生成后立即部署网站<br>-w, –watch	监视文件变动<br>-b, –bail	生成过程中如果发生任何未处理的异常则抛出异常<br>-f, –force	强制重新生成文件<br>Hexo 引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。<br>使用该参数的效果接近 hexo clean &amp;&amp; hexo generate<br>-c, –concurrency	最大同时生成文件的数量，默认无限制<br>该命令可以简写为</p>
 <p>$ hexo g<br>publish<br>$ hexo publish [layout] <filename><br>发表草稿。</p>
