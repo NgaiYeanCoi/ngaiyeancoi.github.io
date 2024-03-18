@@ -56,49 +56,40 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
 <p>如果你决定要重新开始，则可以使用reset命令：</p>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ufw reset</span></span><br></pre></td></tr></table></div></figure>
 
-<p>这将禁用UFW并删除之前定义的任何规则。</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2024/03/18/UFW%E9%98%B2%E7%81%AB%E5%A2%99/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2024/03/17/docker%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/">docker的一些命令</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-03-17</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-03-17</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h2 id="常用命令"   >
-          <a href="#常用命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2>
+<p>这将禁用UFW并删除之前定义的任何规则。</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2024/03/18/UFW%E9%98%B2%E7%81%AB%E5%A2%99/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2024/03/17/docker%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/">docker如何改变环境变量</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-03-17</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-03-18</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h2 id="命令-步骤"   >
+          <a href="#命令-步骤" class="heading-link"><i class="fas fa-link"></i></a><a href="#命令-步骤" class="headerlink" title="命令&amp;步骤"></a>命令&amp;步骤</h2>
       <ol>
-<li>关闭docker 服务<blockquote>
-<p>systemctl stop docker</p>
-</blockquote>
-</li>
+<li>关闭docker 服务</li>
 </ol>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl stop docker </span></span><br></pre></td></tr></table></div></figure>
+
+<p>2.查看环境变量</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># docker exec -it [container-id] env</span></span><br></pre></td></tr></table></div></figure>
+
 <ul>
-<li>修改环境变量</li>
-</ul>
-<p>修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量</p>
-<ul>
-<li><p>然后重启docker服务</p>
-<blockquote>
-<p>systemctl daemon-reload<br>systemctl restart docker  </p>
-</blockquote>
-</li>
-<li><p>查看环境变量</p>
-<blockquote>
-<p>docker exec -it [container-id] env</p>
-</blockquote>
-</li>
 <li><p>查看Docker Root Dir: &#x2F;apps&#x2F;docker</p>
-<blockquote>
-<p>docker info</p>
-</blockquote>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># docker info</span></span><br></pre></td></tr></table></div></figure>
 </li>
 <li><p>找到容器短id，再docker inspect [短id], 获取容器的长id：container-id</p>
-<blockquote>
-<p>dokcer ps</p>
-</blockquote>
 </li>
 </ul>
-<p>修改容器配置信息</p>
-<blockquote>
-<p>vim var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json  </p>
-</blockquote>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># dokcer ps</span></span><br></pre></td></tr></table></div></figure>
+
+
+
 <p>或者  </p>
-<blockquote>
-<p>vim var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.json</p>
-</blockquote>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim var/lib/docker/containers/[container-id]/config.json</span></span><br></pre></td></tr></table></div></figure>
+
+<p>3.修改环境变量</p>
+<p>修改&#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;[container-id]&#x2F;config.v2.json里对应的环境变量</p>
+<ul>
+<li>修改容器配置信息<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim var/lib/docker/containers/[container-id]/config.v2.json  </span></span><br></pre></td></tr></table></div></figure></li>
+</ul>
+<p>4.然后重启docker服务</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl daemon-reload</span></span><br><span class="line"><span class="comment"># systemctl restart docker  </span></span><br></pre></td></tr></table></div></figure>
+
+
 </div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2024/03/17/hexo/">hexo的一些命令</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-03-17</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-03-17</span></span></div></header><div class="post-body"><div class="post-excerpt"><h2 id="常用命令"   >
           <a href="#常用命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2>
       <ul>
