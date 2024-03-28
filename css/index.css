@@ -623,7 +623,7 @@ body::after {
   position: fixed;
   height: 100vh;
   z-index: -2;
-  background: url("/image/bg.jpg") no-repeat center/cover;
+  background: url("") no-repeat center/cover;
 }
 .container {
   white-space: normal;
