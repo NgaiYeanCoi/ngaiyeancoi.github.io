@@ -1,0 +1,654 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="学习Markdown by NgaiYeanCoi 2023.8.29更新        此篇是由NgaiYeanCoi整理编写出的Markdown教程，如有错误的请指出。Stayrabbit &amp; NgaiYeanCoi是同一人。全篇建议配合源代码一起阅读点我查看源码                       一、前言">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown的使用教程">
+<meta property="og:url" content="https://blog.nyc1.xyz/2023/11/04/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="NgaiYeanCoi&#39;s blog">
+<meta property="og:description" content="学习Markdown by NgaiYeanCoi 2023.8.29更新        此篇是由NgaiYeanCoi整理编写出的Markdown教程，如有错误的请指出。Stayrabbit &amp; NgaiYeanCoi是同一人。全篇建议配合源代码一起阅读点我查看源码                       一、前言">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/59606047?s=400&u=155fe46660bc002266cbcba0719bdda83d79edb4&v=4">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/icon.jpg">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/icon.jpg">
+<meta property="article:published_time" content="2023-11-04T10:00:23.000Z">
+<meta property="article:modified_time" content="2024-03-28T10:17:53.825Z">
+<meta property="article:author" content="NgaiYeanCoi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/59606047?s=400&u=155fe46660bc002266cbcba0719bdda83d79edb4&v=4"><title>MarkDown的使用教程 | NgaiYeanCoi's blog</title><link ref="canonical" href="https://blog.nyc1.xyz/2023/11/04/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/study/"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">学习</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">NgaiYeanCoi's Blog</div><div class="header-banner-info__subtitle">一个梦想成为大佬的彩笔</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><div class="sticky-top" data-popover="置顶文章" data-popover-pos="up"><span class="sticky-top__icon"><i class="fas fa-thumbtack"></i></span></div><h1 class="post-title">MarkDown的使用教程</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2023-11-04</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-03-28</span></span></div></header><div class="post-body">
+        <h1 id="学习Markdown-by-NgaiYeanCoi-2023-8-29更新"   >
+          <a href="#学习Markdown-by-NgaiYeanCoi-2023-8-29更新" class="heading-link"><i class="fas fa-link"></i></a><a href="#学习Markdown-by-NgaiYeanCoi-2023-8-29更新" class="headerlink" title="学习Markdown by NgaiYeanCoi 2023.8.29更新"></a>学习Markdown by NgaiYeanCoi 2023.8.29更新</h1>
+      <hr>
+<p>此篇是由NgaiYeanCoi整理编写出的Markdown教程，如有错误的请指出。<br>Stayrabbit &amp; NgaiYeanCoi是同一人。<br>全篇建议配合源代码一起阅读<br><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/NgaiYeanCoi/NYC-Notes/blob/master/%E7%BC%96%E7%A8%8B%E7%B1%BB/Markdown/%E5%AD%A6%E4%B9%A0Markdown%E7%AC%94%E8%AE%B0.md?plain=1" >点我查看源码</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>  </p>
+
+        <h2 id="一、前言"   >
+          <a href="#一、前言" class="heading-link"><i class="fas fa-link"></i></a><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2>
+      
+        <h3 id="1-1-关于Markdown"   >
+          <a href="#1-1-关于Markdown" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-1-关于Markdown" class="headerlink" title="1.1 关于Markdown"></a>1.1 关于Markdown</h3>
+      <ul>
+<li><p>Markdown是一种轻量标记语言,它可以让人们更容易读懂纯文本的文档说明</p>
+</li>
+<li><p>Markdown编写的文档可以导出为HTML、World、图像、PDF 等多种格式的文档</p>
+</li>
+<li><p>Markdown文档的后缀<code>.md</code> <code>.markdown</code></p>
+</li>
+</ul>
+
+        <h3 id="1-2-Markdown的应用"   >
+          <a href="#1-2-Markdown的应用" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-2-Markdown的应用" class="headerlink" title="1.2 Markdown的应用"></a>1.2 Markdown的应用</h3>
+      <ul>
+<li><p>Markdown可以用来写笔记、电子书</p>
+</li>
+<li><p>目前很多网站都广泛使用Markdown来撰写帮助文档或者是用于论坛，例如：GitHub、简书等</p>
+</li>
+</ul>
+
+        <h3 id="1-3-Markdown的编辑器"   >
+          <a href="#1-3-Markdown的编辑器" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-3-Markdown的编辑器" class="headerlink" title="1.3 Markdown的编辑器"></a>1.3 Markdown的编辑器</h3>
+      <ul>
+<li><p>Markdown存在有多种多样的编辑器，并没有哪种编辑器更好的说法，只有适合自己的编辑器。</p>
+</li>
+<li><p>常见的Markdown编辑器有<strong>Visual Studio Code</strong>、<strong>Typora</strong>、<strong>Obsidian</strong>等</p>
+</li>
+</ul>
+
+        <h2 id="二、Markdown的语法"   >
+          <a href="#二、Markdown的语法" class="heading-link"><i class="fas fa-link"></i></a><a href="#二、Markdown的语法" class="headerlink" title="二、Markdown的语法"></a>二、Markdown的语法</h2>
+      <ul>
+<li><p>Markdown 有着非常简洁的语法，不过由于它的自由性，Markdown 也产生了许多变体，如 GitHub Flavored Markdown (GFM) 和 Pandoc 。</p>
+</li>
+<li><p>其他的暂且不讨论，先来看看Markdown 通用的基础语法。</p>
+</li>
+<li><p>以下的语法基于 <strong>VS Code</strong> 与 <strong>Markdown Preview Enhanced 插件</strong></p>
+</li>
+</ul>
+<span id="more"></span>
+
+
+        <h3 id="2-1-标题的写法"   >
+          <a href="#2-1-标题的写法" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-1-标题的写法" class="headerlink" title="2.1 标题的写法"></a>2.1 标题的写法</h3>
+      <ul>
+<li>标题的写法可以用”#”来表示标题的大小</li>
+</ul>
+<blockquote>
+<p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题  </p>
+</blockquote>
+<p>例如一级标题：</p>
+<blockquote>
+<p>#&nbsp;要输入的文本  </p>
+</blockquote>
+<hr>
+
+        <h3 id="2-2-段落"   >
+          <a href="#2-2-段落" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-2-段落" class="headerlink" title="2.2 段落"></a>2.2 段落</h3>
+      <ul>
+<li>Markdown段落没有特殊的格式段落跟段落之间要隔开一行，<strong>段落的换行是使用两个以上空格加上回车</strong>。</li>
+</ul>
+<blockquote>
+<p>段落一&amp;nbsp;&amp;nbsp;<br>段落二  </p>
+</blockquote>
+<p>示例：  </p>
+<p>段落一<br>段落二</p>
+<p>P.S. 结合源代码来看</p>
+<hr>
+
+        <h3 id="2-3-分割线"   >
+          <a href="#2-3-分割线" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-3-分割线" class="headerlink" title="2.3 分割线"></a>2.3 分割线</h3>
+      <ul>
+<li>分割线的写法可以用三条横线 <code>-</code>、星号 <code>*</code>、下划线 <code>_</code> 或者三条以上，<strong>行内不能有其他东西</strong>。</li>
+</ul>
+<blockquote>
+<p>-–<br>***<br>___<br>-—-<br>*****  </p>
+</blockquote>
+<p>示例：</p>
+<hr>
+<ul>
+<li>你也可以在星号或是横线中间插入空格。</li>
+</ul>
+<blockquote>
+<p>* * *<br>- - -<br>_ _ _</p>
+</blockquote>
+<hr>
+
+        <h3 id="2-4-字体格式"   >
+          <a href="#2-4-字体格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-4-字体格式" class="headerlink" title="2.4 字体格式"></a>2.4 字体格式</h3>
+      <ul>
+<li>Markdown在使用的时候，我们需要<strong>加粗</strong>、<em>斜体</em>、<em><strong>粗斜体</strong></em> 来让笔记更加的醒目跟美观。</li>
+</ul>
+
+        <h4 id="2-4-1-Markdown常用下面这几种字体"   >
+          <a href="#2-4-1-Markdown常用下面这几种字体" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-4-1-Markdown常用下面这几种字体" class="headerlink" title="2.4.1 Markdown常用下面这几种字体"></a>2.4.1 Markdown常用下面这几种字体</h4>
+      <ul>
+<li>加粗文本  <blockquote>
+<p>**文字**</p>
+</blockquote>
+</li>
+</ul>
+<p>示例：<strong>文字</strong></p>
+<ul>
+<li>斜体文本<blockquote>
+<p>*文字*</p>
+</blockquote>
+</li>
+</ul>
+<p>示例：<em>文字</em></p>
+<ul>
+<li>粗斜体文本 <blockquote>
+<p>***文字***</p>
+</blockquote>
+</li>
+</ul>
+<p>示例：<em><strong>文字</strong></em></p>
+
+        <h4 id="2-4-2-其他的字体"   >
+          <a href="#2-4-2-其他的字体" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-4-2-其他的字体" class="headerlink" title="2.4.2 其他的字体"></a>2.4.2 其他的字体</h4>
+      <p>Markdown在使用的时候还会使用到 <del>删除线</del>、<u>下划线</u> 、脚注的情况。</p>
+<ul>
+<li>删除线文本  <blockquote>
+<p>~~文字~~</p>
+</blockquote>
+</li>
+</ul>
+<p>示例：<del>文字</del></p>
+<ul>
+<li>下划线文本  <blockquote>
+<p>&lt;u&gt;文字&lt;&#x2F;u&gt;</p>
+</blockquote>
+</li>
+</ul>
+<p>示例：<u>文字</u></p>
+<ul>
+<li>脚注文本</li>
+</ul>
+<p>首先创建脚注 </p>
+<blockquote>
+<p>[^定义脚注文本]  </p>
+</blockquote>
+<p>后面再创建跟前面创建的脚注补充说明的文字</p>
+<blockquote>
+<p>[^定义脚注文本]:（补充文字）。</p>
+</blockquote>
+<p>示例：<a href="%EF%BC%88%602.4.2%60%E8%84%9A%E6%B3%A8%E7%9A%84%E7%A4%BA%E4%BE%8B%EF%BC%89">^stayrabbit</a>  </p>
+<p>P.S. 结合源代码来看</p>
+<hr>
+
+        <h3 id="2-5-列表格式"   >
+          <a href="#2-5-列表格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-5-列表格式" class="headerlink" title="2.5 列表格式"></a>2.5 列表格式</h3>
+      <ul>
+<li>Markdown 支持有序列表和无序列表列表，是记笔记时非常基本的元素。</li>
+</ul>
+
+        <h4 id="2-5-1-无序列表"   >
+          <a href="#2-5-1-无序列表" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-5-1-无序列表" class="headerlink" title="2.5.1 无序列表"></a>2.5.1 无序列表</h4>
+      <ul>
+<li>无序列表使用星号<code>*</code>、加号<code>+</code>或是减号<code>-</code>作为列表标记，这些标记后面要添加一个空格，然后再填写内容。</li>
+</ul>
+<blockquote>
+<p>* 第一项<br>* 第二项<br>* 第三项  </p>
+</blockquote>
+<blockquote>
+<p>+ 第一项<br>+ 第二项<br>+ 第三项  </p>
+</blockquote>
+<blockquote>
+<p>- 第一项<br>- 第二项<br>- 第三项  </p>
+</blockquote>
+<p>示例：</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+
+        <h4 id="2-5-2-嵌套无序列表"   >
+          <a href="#2-5-2-嵌套无序列表" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-5-2-嵌套无序列表" class="headerlink" title="2.5.2 嵌套无序列表"></a>2.5.2 嵌套无序列表</h4>
+      <ul>
+<li>嵌套无序列表，嵌套列表需要再子列表选项中前面多加两个空格或者四个然后再填写内容。</li>
+</ul>
+<blockquote>
+<p>*第一项<br>&nbsp;&nbsp;*嵌套第一项<br>&nbsp;&nbsp;*嵌套第二项<br>&nbsp;&nbsp;*嵌套第三项<br>*第二项<br>&nbsp;&nbsp;*嵌套第一项<br>&nbsp;&nbsp;*嵌套第二项<br>&nbsp;&nbsp;*嵌套第三项</p>
+</blockquote>
+<p>示例：</p>
+<ul>
+<li>第一项<ul>
+<li>嵌套第一项</li>
+<li>嵌套第二项</li>
+<li>嵌套第三项</li>
+</ul>
+</li>
+<li>第二项<ul>
+<li>嵌套第一项</li>
+<li>嵌套第二项</li>
+<li>嵌套第三项</li>
+</ul>
+</li>
+</ul>
+
+        <h4 id="2-5-3-有序列表"   >
+          <a href="#2-5-3-有序列表" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-5-3-有序列表" class="headerlink" title="2.5.3 有序列表"></a>2.5.3 有序列表</h4>
+      <ul>
+<li>有序列表使用数字并加上<code>.</code> 号加上空格输入内容来表示。</li>
+</ul>
+<blockquote>
+<ol>
+<li>第一项  </li>
+<li>第二项  </li>
+<li>第三项</li>
+</ol>
+</blockquote>
+<p>P.S. <code>“.”</code>后面有空格</p>
+<p>示例：</p>
+<ol>
+<li>第一项  </li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+
+        <h4 id="2-5-4-嵌套有序列表"   >
+          <a href="#2-5-4-嵌套有序列表" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-5-4-嵌套有序列表" class="headerlink" title="2.5.4 嵌套有序列表"></a>2.5.4 嵌套有序列表</h4>
+      <ul>
+<li>嵌套有序列表与<a href="#252-%E5%B5%8C%E5%A5%97%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">2.5.2</a>方法类似，嵌套列表需要再子列表选项中前面多加两个空格或者四个然后再填写内容。</li>
+</ul>
+<blockquote>
+<ol>
+<li>第一项<br>&nbsp;&nbsp;1. 嵌套第一项<br>&nbsp;&nbsp;2. 嵌套第二项<br>&nbsp;&nbsp;3. 嵌套第三项  </li>
+<li>第二项<br>&nbsp;&nbsp;1. 嵌套第一项<br>&nbsp;&nbsp;2. 嵌套第二项<br>&nbsp;&nbsp;3. 嵌套第三项</li>
+</ol>
+</blockquote>
+<p>示例:</p>
+<ol>
+<li>有序列表 1<ol>
+<li>嵌套有序列表第一项</li>
+<li>嵌套有序列表第二项</li>
+</ol>
+</li>
+<li>有序列表 2<ol>
+<li>嵌套有序列表第一项</li>
+<li>嵌套有序列表第二项</li>
+</ol>
+</li>
+</ol>
+
+        <h4 id="2-5-5-Markdown-Preview-Enhanced-拓展"   >
+          <a href="#2-5-5-Markdown-Preview-Enhanced-拓展" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-5-5-Markdown-Preview-Enhanced-拓展" class="headerlink" title="2.5.5 Markdown Preview Enhanced 拓展"></a>2.5.5 Markdown Preview Enhanced 拓展</h4>
+      <ul>
+<li>任务列表待办事项，基于Markdown Preview Enhanced插件的拓展任务列表</li>
+</ul>
+<blockquote>
+<p>* [ &nbsp;] 1. 未完成事情<br>* [ &nbsp;] 2. 未完成事情<br>* [X] 3. 已完成的事情</p>
+</blockquote>
+<p>示例:</p>
+<ul>
+<li><input disabled="" type="checkbox"> <ol>
+<li>未完成事情</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"> <ol start="2">
+<li>未完成的事情</li>
+</ol>
+</li>
+<li><input checked="" disabled="" type="checkbox"> 3.已完成的事情</li>
+</ul>
+<hr>
+
+        <h3 id="2-6-区块引用"   >
+          <a href="#2-6-区块引用" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-6-区块引用" class="headerlink" title="2.6 区块引用"></a>2.6 区块引用</h3>
+      <ul>
+<li>Markdown 区块引用是在段落开头使用 <code>&gt;</code>符号 ，然后后面紧跟一个空格符号。</li>
+</ul>
+<blockquote>
+<p>&gt;&nbsp;引用文本test</p>
+</blockquote>
+<p>示例：</p>
+<blockquote>
+<p>Stayrabbit:Hello World！</p>
+</blockquote>
+
+        <h4 id="2-6-1-区块的嵌套"   >
+          <a href="#2-6-1-区块的嵌套" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-6-1-区块的嵌套" class="headerlink" title="2.6.1 区块的嵌套"></a>2.6.1 区块的嵌套</h4>
+      <ul>
+<li>区块跟列表一样是可以嵌套的，一个 <code>&gt;</code> 符号是最外层，两个 <code>&gt;</code> 符号是第一层嵌套，以此类推。</li>
+</ul>
+<blockquote>
+<p>&gt;&nbsp;第外层<br>&gt;&gt;&nbsp;第一层嵌套<br>&gt;&gt;&gt;&nbsp;第二层嵌套<br>&gt;&gt;&gt;&gt;&nbsp;第三层嵌套</p>
+</blockquote>
+<p>示例:</p>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套  </p>
+<blockquote>
+<p>第三层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        <h4 id="2-6-2-区块中使用列表"   >
+          <a href="#2-6-2-区块中使用列表" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-6-2-区块中使用列表" class="headerlink" title="2.6.2 区块中使用列表"></a>2.6.2 区块中使用列表</h4>
+      <ul>
+<li>在区块中是可以使用列表的列表的规则请参照<a href="#25-%E5%88%97%E8%A1%A8%E6%A0%BC%E5%BC%8F">2.5</a>的格式。</li>
+</ul>
+<blockquote>
+<p>&gt;区块中使用列表<br>* 无序第一项<br>* 无序第二项<br>1. 有序第一项<br>2. 有序第二项</p>
+</blockquote>
+<p>示例：</p>
+<blockquote>
+<p>区块中使用列表示例</p>
+<ul>
+<li>无序第一项  </li>
+<li>无序第二项</li>
+</ul>
+<ol>
+<li>有序第一项  </li>
+<li>有序第二项</li>
+</ol>
+</blockquote>
+
+        <h4 id="2-6-3-列表中使用区块"   >
+          <a href="#2-6-3-列表中使用区块" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-6-3-列表中使用区块" class="headerlink" title="2.6.3 列表中使用区块"></a>2.6.3 列表中使用区块</h4>
+      <ul>
+<li>如果要在列表内放进区块，就需要在 &gt; 前添加四个空格的缩进。</li>
+</ul>
+<blockquote>
+<p>* 无序第一项<br>&nbsp;&nbsp;&nbsp;&nbsp;&gt;区块第一项<br>&nbsp;&nbsp;&nbsp;&nbsp;&gt;区块第二项<br>* 无序第二项<br>&nbsp;&nbsp;&nbsp;&nbsp;&gt;区块第一项<br>&nbsp;&nbsp;&nbsp;&nbsp;&gt;区块第二项 </p>
+</blockquote>
+<p>示例：</p>
+<ul>
+<li>无序第一项  <blockquote>
+<p>区块第一项<br>区块第二项</p>
+</blockquote>
+</li>
+<li>无序第二项  <blockquote>
+<p>区块第一项<br>区块第二项</p>
+</blockquote>
+</li>
+</ul>
+<p>P.S. 有序列表也类似请参考<a href="#263-%E5%88%97%E8%A1%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%9D%97">2.6.3</a>与<a href="#25-%E5%88%97%E8%A1%A8%E6%A0%BC%E5%BC%8F">2.5</a>。</p>
+<hr>
+
+        <h3 id="2-7-转义"   >
+          <a href="#2-7-转义" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-7-转义" class="headerlink" title="2.7 转义"></a>2.7 转义</h3>
+      <ul>
+<li>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠<code>\</code>转义特殊字符。</li>
+</ul>
+<blockquote>
+<p>\ * \* 文本字符 \ *\ *</p>
+</blockquote>
+<p>示例:</p>
+<blockquote>
+<p>**文本字符**</p>
+</blockquote>
+<ul>
+<li>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号包括<code>\</code>本身：</li>
+</ul>
+<blockquote>
+<p>\   反斜线<br>&#96;   反引号<br>*   星号<br>_   下划线<br>{}  花括号<br>[]  方括号<br>()  小括号<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   感叹号</p>
+</blockquote>
+<p>P.S. 转义在区块引用<a href="#26-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8">2.6</a>中也是有效的。</p>
+<hr>
+
+        <h3 id="2-8-代码"   >
+          <a href="#2-8-代码" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-8-代码" class="headerlink" title="2.8 代码"></a>2.8 代码</h3>
+      <ul>
+<li>Markdown在写代码笔记或者在撰写帮助文档的时候，可以让其更加规范、简洁、易懂。</li>
+</ul>
+
+        <h4 id="2-8-1-行内代码（片段的代码）"   >
+          <a href="#2-8-1-行内代码（片段的代码）" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-8-1-行内代码（片段的代码）" class="headerlink" title="2.8.1 行内代码（片段的代码）"></a>2.8.1 行内代码（片段的代码）</h4>
+      <ul>
+<li>如果是段落上的一个函数或片段的代码可以用反引号“ &#96; ”把它包起来。</li>
+</ul>
+<blockquote>
+<p>`printf(“Hello World”);&#96;</p>
+</blockquote>
+<p>示例：<br><code>printf(&quot;Hello World&quot;);</code></p>
+
+        <h4 id="2-8-2-代码块区块"   >
+          <a href="#2-8-2-代码块区块" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-8-2-代码块区块" class="headerlink" title="2.8.2 代码块区块"></a>2.8.2 代码块区块</h4>
+      <ul>
+<li>Markdown可以用 “ &#96;&#96;&#96; ” 来包围一段代码，并指定一种语言（也可以不指定）。</li>
+</ul>
+<blockquote>
+<p>`&#96;&#96;C {.line-numbers} &#x2F;&#x2F;指定一种语言例如C语言。{.line-numbers}表示显示代码行数（基于Markdown Preview Enhanced插件）<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>printf(“Hello World”);<br>return 0;<br>}<br>`&#96;&#96;&nbsp; &#x2F;&#x2F;引用结束</p>
+</blockquote>
+<p>示例:</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;Hello World&quot;);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+<ul>
+<li>或者你可以用第二种方法  </li>
+<li>代码块前后需要有至少一个空行，且每行代码前需要有至少两个<code>Tab</code>或四个空格。</li>
+</ul>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;#include &lt;stdio.h&gt;&#x2F;&#x2F;前面有四个空格<br>&nbsp;&nbsp;&nbsp;&nbsp;int main()&#x2F;&#x2F;前面有四个空格<br>&nbsp;&nbsp;&nbsp;&nbsp;{&#x2F;&#x2F;前面有四个空格<br>&nbsp;&nbsp;&nbsp;&nbsp;printf(“Hello World”);&#x2F;&#x2F;前面有四个空格<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;&#x2F;&#x2F;前面有四个空格<br>&nbsp;&nbsp;&nbsp;&nbsp;}&#x2F;&#x2F;前面有四个空格</p>
+</blockquote>
+<p>示例：  </p>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+&#123;
+printf(&quot;Hello World&quot;);
+return 0;
+&#125;
+</code></pre>
+<hr>
+
+        <h3 id="2-9-超链接"   >
+          <a href="#2-9-超链接" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-9-超链接" class="headerlink" title="2.9 超链接"></a>2.9 超链接</h3>
+      <ul>
+<li>Markdown中的文本可以用下面的方式插入超链接</li>
+</ul>
+<blockquote>
+<p>[超链接名称](超链接地址)</p>
+</blockquote>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.stayrabbit.top/" >https://www.stayrabbit.top/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p>示例：</p>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.stayrabbit.top/" >超链接</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>  </p>
+<ul>
+<li>或者可以直接引用链接</li>
+</ul>
+<blockquote>
+<p>&lt;超链接地址&gt;</p>
+</blockquote>
+<p>示例：</p>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.stayrabbit.top/" >https://www.stayrabbit.top/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+
+        <h4 id="2-9-1-超链接的高级用法"   >
+          <a href="#2-9-1-超链接的高级用法" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-9-1-超链接的高级用法" class="headerlink" title="2.9.1 超链接的高级用法"></a>2.9.1 超链接的高级用法</h4>
+      <ul>
+<li>Markdown还可以通过一个变量名称来设置一个超链接，在后面进行变量的赋值。</li>
+</ul>
+<blockquote>
+<p>[定义一个超链接名称][定义一个超链接变量名称]&nbsp;<br>[超链接变量名称]:https:\<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://www.stayrabbit.top/" >www.stayrabbit.top</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> &#x2F;&#x2F;需跟上面定义的变量名称相对应:后面接地址</p>
+</blockquote>
+<p>示例：</p>
+<p> <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://www.stayrabbit.top/" >2.9.1的示例</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p> P.S. 查看本篇Markdown的源代码，这里把<code>example</code>用作超链接的变量名称，把<code>2.9.1的示例</code>用作超链接的名称</p>
+<hr>
+
+        <h3 id="2-10-插入图片"   >
+          <a href="#2-10-插入图片" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-10-插入图片" class="headerlink" title="2.10 插入图片"></a>2.10 插入图片</h3>
+      <ul>
+<li>在Markdown中插入图片</li>
+</ul>
+<blockquote>
+<p>![图片属性名称](图片的地址 “图片提示语”) &#x2F;&#x2F;“图片提示语”可以不填  </p>
+</blockquote>
+<blockquote>
+<p>![图片属性名称](<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://avatars.githubusercontent.com/u/59606047?s=400&u=155fe46660bc002266cbcba0719bdda83d79edb4&v=4" >https://avatars.githubusercontent.com/u/59606047?s=400&amp;u=155fe46660bc002266cbcba0719bdda83d79edb4&amp;v=4</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> “示例图片提示语”)</p>
+</blockquote>
+<p>示例<br><img   src="https://avatars.githubusercontent.com/u/59606047?s=400&u=155fe46660bc002266cbcba0719bdda83d79edb4&v=4" style=""  alt="图片属性名称" title="示例图片提示语"></p>
+<ul>
+<li>或者引用文件中的相对地址</li>
+</ul>
+<blockquote>
+<p>![图片属性名称](..&#x2F;image&#x2F;icon.jpg “图片提示语”)  &#x2F;&#x2F;“图片提示语”可以不填</p>
+</blockquote>
+<p>示例：</p>
+<p><img src="/../image/icon.jpg" alt="相对地址图片名称" title="示例图片提示语"></p>
+
+        <h4 id="2-10-1-指定图片的高度与宽度"   >
+          <a href="#2-10-1-指定图片的高度与宽度" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-10-1-指定图片的高度与宽度" class="headerlink" title="2.10.1 指定图片的高度与宽度"></a>2.10.1 指定图片的高度与宽度</h4>
+      <ul>
+<li>Markdown不能指定图片的高度与宽度，如果你需要改变的话可以用HTML的<code>&lt;img&gt;</code>标签</li>
+</ul>
+<blockquote>
+<p>&lt;img decoding&#x3D;”async” src&#x3D;”&#x2F;..&#x2F;image&#x2F;icon.jpg” width&#x3D;”10%” title&#x3D;”img标签的示例” &gt;</p>
+</blockquote>
+<p>示例：</p>
+<blockquote>
+<img decoding="async" src="/../image/icon.jpg" width="10%" title="img标签的示例">
+</blockquote>
+
+        <h3 id="2-11-表格"   >
+          <a href="#2-11-表格" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-11-表格" class="headerlink" title="2.11 表格"></a>2.11 表格</h3>
+      <ul>
+<li>Markdown可以在做笔记或者撰写文档的时候使用表格用<code>|</code>来分隔不同的单元格,使用<code>-</code>来分隔其他表头和行</li>
+</ul>
+<blockquote>
+<p>| 表头1 | 表头2 |<br>| —- | —- |<br>| 单元格 | 单元格 |<br>| 单元格 | 单元格 |</p>
+</blockquote>
+<p>示例：</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table></div>
+
+        <h4 id="2-11-1-表格的对齐"   >
+          <a href="#2-11-1-表格的对齐" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-11-1-表格的对齐" class="headerlink" title="2.11.1 表格的对齐"></a>2.11.1 表格的对齐</h4>
+      <ul>
+<li><p>表格中的内容可以相对于表格对齐</p>
+</li>
+<li><p><code>:-</code>居左对齐</p>
+</li>
+<li><p><code>:-:</code>居中对齐</p>
+</li>
+<li><p><code>-:</code>居右对齐</p>
+</li>
+</ul>
+<p>示例：</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th align="left">居左对齐</th>
+<th align="center">居中对齐</th>
+<th align="right">居右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+</tbody></table></div>
+
+        <h3 id="2-12-注释"   >
+          <a href="#2-12-注释" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-12-注释" class="headerlink" title="2.12 注释"></a>2.12 注释</h3>
+      <ul>
+<li>Markdown的注释与HTML的注释类似可以在源代码中标识一段而不被渲染出来</li>
+</ul>
+<blockquote>
+<p>&lt;!--注释--&gt;</p>
+</blockquote>
+<p>示例：  </p>
+<!--注释的示例-->
+
+<p>P.S.结合源代码来查看示例</p>
+
+        <h2 id="三、参考文献"   >
+          <a href="#三、参考文献" class="heading-link"><i class="fas fa-link"></i></a><a href="#三、参考文献" class="headerlink" title="三、参考文献"></a>三、参考文献</h2>
+      <ol>
+<li>Markdown - 维基百科，自由的百科全书 -wiki- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Markdown" >https://zh.wikipedia.org/wiki/Markdown</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>  </li>
+<li>第 3 期、写作：使用 Markdown 记笔记入门 -知乎- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/496076040" >https://zhuanlan.zhihu.com/p/496076040</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></li>
+<li>runoob Markdown教程 -runoob.com- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html" >https://www.runoob.com/markdown/md-tutorial.html</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></li>
+</ol>
+
+        <h2 id="四、扩展阅读"   >
+          <a href="#四、扩展阅读" class="heading-link"><i class="fas fa-link"></i></a><a href="#四、扩展阅读" class="headerlink" title="四、扩展阅读"></a>四、扩展阅读</h2>
+      <ol>
+<li>Markdown 写作规范和格式规范 -腾讯云|开发者社区- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2087118" >https://cloud.tencent.com/developer/article/2087118</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>  </li>
+<li>Markdown 编写规范 -Github- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/fex-team/styleguide/blob/master/markdown.md" >https://github.com/fex-team/styleguide/blob/master/markdown.md</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></li>
+<li>Markdown style guide -Github- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/google/styleguide/blob/gh-pages/docguide/style.md" >https://github.com/google/styleguide/blob/gh-pages/docguide/style.md</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></li>
+<li>搭建 Markdown 强大写作环境（VSCode）-知乎- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/139140492" >https://zhuanlan.zhihu.com/p/139140492</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></li>
+<li>计算机学生的第零课 -OrangeX4’s Blog- <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://orangex4.cool/post/lesson-zero-for-cs-students/" >https://orangex4.cool/post/lesson-zero-for-cs-students/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></li>
+</ol>
+
+        <h2 id="后续将继续更新其他高级用法…"   >
+          <a href="#后续将继续更新其他高级用法…" class="heading-link"><i class="fas fa-link"></i></a><a href="#后续将继续更新其他高级用法…" class="headerlink" title="后续将继续更新其他高级用法…"></a>后续将继续更新其他高级用法…</h2>
+      <p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://htmlpreview.github.io/?https://github.com/NgaiYeanCoi/NYC-Notes/blob/master/%E7%BC%96%E7%A8%8B%E7%B1%BB/LaTex/LaTex.html" >LaTex</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://blog.nyc1.xyz">NgaiYeanCoi</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://blog.nyc1.xyz/2023/11/04/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">https://blog.nyc1.xyz/2023/11/04/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2024/03/17/hexo/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">hexo的一些命令</span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0Markdown-by-NgaiYeanCoi-2023-8-29%E6%9B%B4%E6%96%B0"><span class="toc-number">1.</span> <span class="toc-text">
+          学习Markdown by NgaiYeanCoi 2023.8.29更新</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">
+          一、前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%85%B3%E4%BA%8EMarkdown"><span class="toc-number">1.1.1.</span> <span class="toc-text">
+          1.1 关于Markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Markdown%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">1.1.2.</span> <span class="toc-text">
+          1.2 Markdown的应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-Markdown%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.1.3.</span> <span class="toc-text">
+          1.3 Markdown的编辑器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Markdown%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">
+          二、Markdown的语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%A0%87%E9%A2%98%E7%9A%84%E5%86%99%E6%B3%95"><span class="toc-number">1.2.1.</span> <span class="toc-text">
+          2.1 标题的写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%AE%B5%E8%90%BD"><span class="toc-number">1.2.2.</span> <span class="toc-text">
+          2.2 段落</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">1.2.3.</span> <span class="toc-text">
+          2.3 分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.2.4.</span> <span class="toc-text">
+          2.4 字体格式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-1-Markdown%E5%B8%B8%E7%94%A8%E4%B8%8B%E9%9D%A2%E8%BF%99%E5%87%A0%E7%A7%8D%E5%AD%97%E4%BD%93"><span class="toc-number">1.2.4.1.</span> <span class="toc-text">
+          2.4.1 Markdown常用下面这几种字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-2-%E5%85%B6%E4%BB%96%E7%9A%84%E5%AD%97%E4%BD%93"><span class="toc-number">1.2.4.2.</span> <span class="toc-text">
+          2.4.2 其他的字体</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%88%97%E8%A1%A8%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.2.5.</span> <span class="toc-text">
+          2.5 列表格式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-1-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.5.1.</span> <span class="toc-text">
+          2.5.1 无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-2-%E5%B5%8C%E5%A5%97%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.5.2.</span> <span class="toc-text">
+          2.5.2 嵌套无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-3-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.5.3.</span> <span class="toc-text">
+          2.5.3 有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-4-%E5%B5%8C%E5%A5%97%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.5.4.</span> <span class="toc-text">
+          2.5.4 嵌套有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-5-Markdown-Preview-Enhanced-%E6%8B%93%E5%B1%95"><span class="toc-number">1.2.5.5.</span> <span class="toc-text">
+          2.5.5 Markdown Preview Enhanced 拓展</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="toc-number">1.2.6.</span> <span class="toc-text">
+          2.6 区块引用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-1-%E5%8C%BA%E5%9D%97%E7%9A%84%E5%B5%8C%E5%A5%97"><span class="toc-number">1.2.6.1.</span> <span class="toc-text">
+          2.6.1 区块的嵌套</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-2-%E5%8C%BA%E5%9D%97%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.6.2.</span> <span class="toc-text">
+          2.6.2 区块中使用列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-3-%E5%88%97%E8%A1%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%9D%97"><span class="toc-number">1.2.6.3.</span> <span class="toc-text">
+          2.6.3 列表中使用区块</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-%E8%BD%AC%E4%B9%89"><span class="toc-number">1.2.7.</span> <span class="toc-text">
+          2.7 转义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.8.</span> <span class="toc-text">
+          2.8 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-8-1-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%EF%BC%88%E7%89%87%E6%AE%B5%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="toc-number">1.2.8.1.</span> <span class="toc-text">
+          2.8.1 行内代码（片段的代码）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-8-2-%E4%BB%A3%E7%A0%81%E5%9D%97%E5%8C%BA%E5%9D%97"><span class="toc-number">1.2.8.2.</span> <span class="toc-text">
+          2.8.2 代码块区块</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-number">1.2.9.</span> <span class="toc-text">
+          2.9 超链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-9-1-%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95"><span class="toc-number">1.2.9.1.</span> <span class="toc-text">
+          2.9.1 超链接的高级用法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">1.2.10.</span> <span class="toc-text">
+          2.10 插入图片</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-10-1-%E6%8C%87%E5%AE%9A%E5%9B%BE%E7%89%87%E7%9A%84%E9%AB%98%E5%BA%A6%E4%B8%8E%E5%AE%BD%E5%BA%A6"><span class="toc-number">1.2.10.1.</span> <span class="toc-text">
+          2.10.1 指定图片的高度与宽度</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-11-%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.2.11.</span> <span class="toc-text">
+          2.11 表格</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-11-1-%E8%A1%A8%E6%A0%BC%E7%9A%84%E5%AF%B9%E9%BD%90"><span class="toc-number">1.2.11.1.</span> <span class="toc-text">
+          2.11.1 表格的对齐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12-%E6%B3%A8%E9%87%8A"><span class="toc-number">1.2.12.</span> <span class="toc-text">
+          2.12 注释</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-number">1.3.</span> <span class="toc-text">
+          三、参考文献</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB"><span class="toc-number">1.4.</span> <span class="toc-text">
+          四、扩展阅读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%BB%AD%E5%B0%86%E7%BB%A7%E7%BB%AD%E6%9B%B4%E6%96%B0%E5%85%B6%E4%BB%96%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95%E2%80%A6"><span class="toc-number">1.5.</span> <span class="toc-text">
+          后续将继续更新其他高级用法…</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/image/icon.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">一个梦想成为大佬的彩笔</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/NgaiYeanCoi" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">归档</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2024</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>NgaiYeanCoi</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v7.0.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
