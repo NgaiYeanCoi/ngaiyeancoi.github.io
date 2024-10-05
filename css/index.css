@@ -1298,7 +1298,7 @@ kbd {
   width: 100%;
 }
 .search-results {
-  max-height: calc(80vh - 6rem);
+  max-height: calc(80vh - 8rem);
 }
 .search-results b {
   border-bottom: 1px dashed #f00;
@@ -2894,7 +2894,7 @@ html.nightmode {
     max-height: 100vh;
   }
   .search-results {
-    max-height: calc(100vh - 6rem);
+    max-height: calc(100vh - 8rem);
   }
 }
 @media (max-width: 575.98px) {
