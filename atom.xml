@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NgaiYeanCoi&#39;s blog</title>
+  <icon>https://blog.nyc1.xyz/icon.png</icon>
+  <subtitle>Welcome</subtitle>
+  <link href="https://blog.nyc1.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://blog.nyc1.xyz/"/>
+  <updated>2024-10-06T13:54:20.981Z</updated>
+  <id>https://blog.nyc1.xyz/</id>
+  
+  <author>
+    <name>NgaiYeanCoi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>白云学院维修部指南-第一章硬件性能的认识</title>
+    <link href="https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+    <id>https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
+    <published>2024-10-01T20:34:55.000Z</published>
+    <updated>2024-10-06T13:54:20.981Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;   &gt;
+          &lt;a href=&quot;#前言&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;介于我在国庆回家的路上在想着怎么样才能让自己的社团成员学习到维修的一些知识呢，我想到了写一篇blog来教你们如何快速的入门。&lt;/li&gt;
+&lt;li&gt;作为24届白云学院计协维修部的副部长，具备扎实的电脑维修知识和实践能力是作为维修部成员是必备的素质。我希望这一篇指南可以传承下去让白云学院每一届的维修部的同学都有所受益。&lt;/li&gt;
+&lt;li&gt;本指南将从电脑的基础知识入手，详细介绍电脑各个部件的功能与作用，并通过实践拆装电脑、清灰等操作，让大家亲自动手，掌握实用的维修技巧，我们还将深入讲解BIOS的基本概念和常用设置，以及如何重装系统等高级操作。&lt;/li&gt;
+&lt;li&gt;此篇适用于广东白云学院计算机协会维修部或者其他部门的每一个成员，以及为有兴趣的同学提供学习指南。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="university" scheme="https://blog.nyc1.xyz/categories/university/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AI与区块链选修期中指南</title>
+    <link href="https://blog.nyc1.xyz/2024/04/21/AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E6%9C%9F%E4%B8%AD%E6%8C%87%E5%8D%97/"/>
+    <id>https://blog.nyc1.xyz/2024/04/21/AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E6%9C%9F%E4%B8%AD%E6%8C%87%E5%8D%97/</id>
+    <published>2024-04-21T04:27:50.000Z</published>
+    <updated>2024-10-05T16:48:59.772Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;   &gt;
+          &lt;a href=&quot;#前言&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;介于很多同学没接触过AIGC的工具不知道该怎么去完成该考试&lt;/li&gt;
+&lt;li&gt;前期我试过国内的一些模型感觉都不如DALLE3好用，但使用这个服务对于通过考试来说很贵，这里将告诉你怎么样用最低的成本来通过考试&lt;/li&gt;
+&lt;li&gt;这里将提供购买渠道以及应用平台&lt;/li&gt;
+&lt;li&gt;以下将作为指南去帮助你通过期中考试&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h4 id=&quot;如果你不想花钱就找免费的AIGC工具&quot;   &gt;
+          &lt;a href=&quot;#如果你不想花钱就找免费的AIGC工具&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#如果你不想花钱就找免费的AIGC工具&quot; class=&quot;headerlink&quot; title=&quot;如果你不想花钱就找免费的AIGC工具&quot;&gt;&lt;/a&gt;如果你不想花钱就找免费的AIGC工具&lt;/h4&gt;
+      &lt;ul&gt;
+&lt;li&gt;例如&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot;   href=&quot;https://xinghuo.xfyun.cn/&quot; &gt;讯飞星火&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;或者&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot;   href=&quot;https://www.liblib.art/&quot; &gt;LiblibAI·哩布哩布AI &lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;以及&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot;   href=&quot;https://chatglm.cn/&quot; &gt;智谱清言&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt; 等等，都可以帮助你完成期中考试，工具不限。如果想省麻烦的可以用DALLE3。</summary>
+    
+    
+    
+    <category term="university" scheme="https://blog.nyc1.xyz/categories/university/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>liunx安全管理</title>
+    <link href="https://blog.nyc1.xyz/2024/04/20/liunx%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/"/>
+    <id>https://blog.nyc1.xyz/2024/04/20/liunx%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86/</id>
+    <published>2024-04-20T07:22:10.000Z</published>
+    <updated>2024-10-05T16:42:53.383Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;   &gt;
+          &lt;a href=&quot;#前言&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;介于上次被一个陌生的德国ip入侵之后不得已重置整个系统，所有已经部署的业务都得重来。由此可见做好安全管理多么重要！&lt;/li&gt;
+&lt;li&gt;以下一些常见的操作来增加系统安全防止被恶意入侵&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h2 id=&quot;Linux安全管理之SSH安全&quot;   &gt;
+          &lt;a href=&quot;#Linux安全管理之SSH安全&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Linux安全管理之SSH安全&quot; class=&quot;headerlink&quot; title=&quot;Linux安全管理之SSH安全&quot;&gt;&lt;/a&gt;Linux安全管理之SSH安全&lt;/h2&gt;
+      
+        &lt;h3 id=&quot;备份&quot;   &gt;
+          &lt;a href=&quot;#备份&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#备份&quot; class=&quot;headerlink&quot; title=&quot;备份&quot;&gt;&lt;/a&gt;备份&lt;/h3&gt;
+      &lt;ul&gt;
+&lt;li&gt;记得备份好你的SSHD的配置文件以防万一&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# cp /etc/ssh/sshd_config /etc/ssh/backup.sshd_config&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h3 id=&quot;OpenSSH的路径&quot;   &gt;
+          &lt;a href=&quot;#OpenSSH的路径&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#OpenSSH的路径&quot; class=&quot;headerlink&quot; title=&quot;OpenSSH的路径&quot;&gt;&lt;/a&gt;OpenSSH的路径&lt;/h3&gt;
+      &lt;ul&gt;
+&lt;li&gt;OpenSSH 服务的配置文件路径为 &amp;#x2F;etc&amp;#x2F;ssh&amp;#x2F;sshd_config ，要配置它，必须得使用系统管理员（ root ）权限或使用 sudo 命令临时获得的管理员权限。&lt;/li&gt;
+&lt;li&gt;配置信息大概长这样的&lt;a href=&quot;https://blog.nyc1.xyz/2024/03/18/SSHD%E9%85%8D%E7%BD%AE%E7%9A%84%E8%A7%A3%E9%87%8A/&quot;&gt;链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里默认你已经会用编辑工具没有的话请安装VIM&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# apt-get install vim&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+        &lt;h3 id=&quot;编辑配置文件&quot;   &gt;
+          &lt;a href=&quot;#编辑配置文件&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#编辑配置文件&quot; class=&quot;headerlink&quot; title=&quot;编辑配置文件&quot;&gt;&lt;/a&gt;编辑配置文件&lt;/h3&gt;
+      &lt;ul&gt;
+&lt;li&gt;准备好就直接编辑&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# vim /etc/ssh/sshd_config&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AI与区块链选修第九章测验图解</title>
+    <link href="https://blog.nyc1.xyz/2024/04/15/AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E9%80%89%E4%BF%AE%E7%AC%AC%E4%B9%9D%E7%AB%A0%E6%B5%8B%E9%AA%8C%E5%9B%BE%E8%A7%A3/"/>
+    <id>https://blog.nyc1.xyz/2024/04/15/AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E9%80%89%E4%BF%AE%E7%AC%AC%E4%B9%9D%E7%AB%A0%E6%B5%8B%E9%AA%8C%E5%9B%BE%E8%A7%A3/</id>
+    <published>2024-04-15T12:30:02.000Z</published>
+    <updated>2024-10-05T16:48:58.551Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;   &gt;
+          &lt;a href=&quot;#前言&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在学习通上老师给的解析还不够详细仍然缺少了些细节&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;这里将一步步拆解老师给的解析&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;大家可以来使用我整理的数据集对于完成作业已经足够了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h2 id=&quot;步骤&quot;   &gt;
+          &lt;a href=&quot;#步骤&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;打开&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot;   href=&quot;https://ai.baidu.com/easydl/&quot; &gt;百度智能云网站&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;点击【立即使用】在【在线使用】【图像:文心大模型】这一弹出【选择模型类型】，列选择【物体检测】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+        &lt;img   class=&quot;lazyload lazyload-gif&quot;
+          src=&quot;/images/loading.svg&quot; data-src=&quot;/../image/ai/1Weixin%20Screenshot_20240415204756.png&quot;  alt=&quot;图片1&quot;&gt;
+      &lt;/p&gt;
+&lt;p&gt;
+        &lt;img   class=&quot;lazyload lazyload-gif&quot;
+          src=&quot;/images/loading.svg&quot; data-src=&quot;/../image/ai/2Weixin%20Screenshot_20240415205106.png&quot;  alt=&quot;图片2&quot;&gt;
+      &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="university" scheme="https://blog.nyc1.xyz/categories/university/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>利用gost中转隧道中转加密</title>
+    <link href="https://blog.nyc1.xyz/2024/03/27/%E5%88%A9%E7%94%A8gost%E4%B8%AD%E8%BD%AC%E9%9A%A7%E9%81%93%E4%B8%AD%E8%BD%AC%E5%8A%A0%E5%AF%86/"/>
+    <id>https://blog.nyc1.xyz/2024/03/27/%E5%88%A9%E7%94%A8gost%E4%B8%AD%E8%BD%AC%E9%9A%A7%E9%81%93%E4%B8%AD%E8%BD%AC%E5%8A%A0%E5%AF%86/</id>
+    <published>2024-03-27T14:34:43.000Z</published>
+    <updated>2024-10-01T17:41:19.207Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;原脚本功能&quot;   &gt;
+          &lt;a href=&quot;#原脚本功能&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#原脚本功能&quot; class=&quot;headerlink&quot; title=&quot;原脚本功能&quot;&gt;&lt;/a&gt;原脚本功能&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;实现了systemd及gost配置文件对gost进行管理&lt;/li&gt;
+&lt;li&gt;在不借助其他工具(如screen)的情况下实现多条转发规则同时生效&lt;/li&gt;
+&lt;li&gt;机器reboot后转发不失效&lt;/li&gt;
+&lt;li&gt;支持传输类型：&lt;ul&gt;
+&lt;li&gt;tcp+udp不加密转发&lt;/li&gt;
+&lt;li&gt;relay+tls加密&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h2 id=&quot;此脚本新增功能&quot;   &gt;
+          &lt;a href=&quot;#此脚本新增功能&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#此脚本新增功能&quot; class=&quot;headerlink&quot; title=&quot;此脚本新增功能&quot;&gt;&lt;/a&gt;此脚本新增功能&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;增加了传输类型选择功能&lt;/li&gt;
+&lt;li&gt;新支持传输类型&lt;ul&gt;
+&lt;li&gt;relay+ws&lt;/li&gt;
+&lt;li&gt;relay+wss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;落地机一键创建ss&amp;#x2F;socks5&amp;#x2F;http代理 (gost内置)&lt;/li&gt;
+&lt;li&gt;支持多传输类型的多落地简单型均衡负载&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;增加gost国内加速下载镜像&lt;/del&gt;（被恶意刷流量导致我损失，不再提供）&lt;/li&gt;
+&lt;li&gt;简单创建或删除gost定时重启任务&lt;/li&gt;
+&lt;li&gt;脚本自动检查更新&lt;/li&gt;
+&lt;li&gt;转发CDN自选节点ip&lt;/li&gt;
+&lt;li&gt;支持自定义tls证书，落地可一键申请证书，中转可开启证书校验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;开源来自&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot;   href=&quot;https://github.com/KANIKIG/Multi-EasyGost&quot; &gt;KANIKIG&amp;#x2F;Multi-EasyGost&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;gost的脚本的安装命令&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>OpenSSH服务器ssh_config</title>
+    <link href="https://blog.nyc1.xyz/2024/03/18/SSHD%E9%85%8D%E7%BD%AE%E7%9A%84%E8%A7%A3%E9%87%8A/"/>
+    <id>https://blog.nyc1.xyz/2024/03/18/SSHD%E9%85%8D%E7%BD%AE%E7%9A%84%E8%A7%A3%E9%87%8A/</id>
+    <published>2024-03-18T15:34:33.000Z</published>
+    <updated>2024-10-01T17:38:12.193Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;SSHD配置文件&quot;   &gt;
+          &lt;a href=&quot;#SSHD配置文件&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#SSHD配置文件&quot; class=&quot;headerlink&quot; title=&quot;SSHD配置文件&quot;&gt;&lt;/a&gt;SSHD配置文件&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;默认路径&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;SSH的配置文件路径：/etc/ssh/sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim /etc/ssh/sshd_config&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    <category term="tech" scheme="https://blog.nyc1.xyz/categories/tech/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UFW防火墙</title>
+    <link href="https://blog.nyc1.xyz/2024/03/18/UFW%E9%98%B2%E7%81%AB%E5%A2%99/"/>
+    <id>https://blog.nyc1.xyz/2024/03/18/UFW%E9%98%B2%E7%81%AB%E5%A2%99/</id>
+    <published>2024-03-18T15:15:20.000Z</published>
+    <updated>2024-10-01T17:41:10.245Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;安装&quot;   &gt;
+          &lt;a href=&quot;#安装&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;
+      
+        &lt;h3 id=&quot;Ubuntu-Debian&quot;   &gt;
+          &lt;a href=&quot;#Ubuntu-Debian&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Ubuntu-Debian&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu &amp;amp; Debian&quot;&gt;&lt;/a&gt;Ubuntu &amp;amp; Debian&lt;/h3&gt;
+      &lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# apt-get install ufw -y&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+        &lt;h3 id=&quot;CentOS&quot;   &gt;
+          &lt;a href=&quot;#CentOS&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#CentOS&quot; class=&quot;headerlink&quot; title=&quot;CentOS&quot;&gt;&lt;/a&gt;CentOS&lt;/h3&gt;
+      &lt;p&gt;CentOS默认软件源不提供UFW，所以你需要安装EPEL软件源，运行以下命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# yum install epel-release -y&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;安装完成后使用以下命令安装UFW：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# yum install --enablerepo=&amp;quot;epel&amp;quot; ufw -y&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;UFW安装后，可以通过以下命令来启动UFW服务并使其在启动时启动（一般在完成默认配置后再重启）：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# ufw enable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;如果运行ufw命令时报&lt;code&gt;Command Not Found&lt;/code&gt;错误，可以使用&lt;code&gt;whereis ufw&lt;/code&gt;来确定ufw的位置，之后你也可以顺手设置一下alias。&lt;br&gt;接下来，使用以下命令检查UFW的状态，可以看到以下输出：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# ufw status &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Status: active&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;还可以通过运行以下命令来禁用UFW防火墙（后面可以通过enable命令随时启用服务）：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# ufw disable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;如果你决定要重新开始，则可以使用reset命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# ufw reset&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;这将禁用UFW并删除之前定义的任何规则。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    <category term="tech" scheme="https://blog.nyc1.xyz/categories/tech/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>docker如何改变环境变量</title>
+    <link href="https://blog.nyc1.xyz/2024/03/17/docker%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"/>
+    <id>https://blog.nyc1.xyz/2024/03/17/docker%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/</id>
+    <published>2024-03-17T13:38:07.000Z</published>
+    <updated>2024-03-27T15:44:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">
+        &lt;h2 id=&quot;命令-步骤&quot;   &gt;
+          &lt;a href=&quot;#命令-步骤&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#命令-步骤&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    <category term="tech" scheme="https://blog.nyc1.xyz/categories/tech/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo的一些命令</title>
+    <link href="https://blog.nyc1.xyz/2024/03/17/hexo/"/>
+    <id>https://blog.nyc1.xyz/2024/03/17/hexo/</id>
+    <published>2024-03-17T12:43:44.000Z</published>
+    <updated>2024-03-27T15:44:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;常用命令&quot;   &gt;
+          &lt;a href=&quot;#常用命令&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;创建和发布文章&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new “postName” 新建文章&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo new page “pageName” 新建页面&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;一键部署命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;div class=&quot;table-container&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hexo clean &amp;#x3D;&amp;#x3D; hexo c&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;清除缓存 网页正常情况下可以忽略此条命令  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hexo generate &amp;#x3D;&amp;#x3D; hexo g&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;生效新增、修改、更新的文件  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hexo deploy &amp;#x3D;&amp;#x3D; hexo d&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo的一键部署功能，执行此命令即可将网站发布到配置中的仓库地址，执行此命令前需要配置站点配置文件_config.yml&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    <category term="tech" scheme="https://blog.nyc1.xyz/categories/tech/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MarkDown的使用教程</title>
+    <link href="https://blog.nyc1.xyz/2023/11/04/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://blog.nyc1.xyz/2023/11/04/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2023-11-04T10:00:23.000Z</published>
+    <updated>2024-10-06T06:51:26.796Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;学习Markdown-by-NgaiYeanCoi-2023-8-29更新&quot;   &gt;
+          &lt;a href=&quot;#学习Markdown-by-NgaiYeanCoi-2023-8-29更新&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#学习Markdown-by-NgaiYeanCoi-2023-8-29更新&quot; class=&quot;headerlink&quot; title=&quot;学习Markdown by NgaiYeanCoi 2023.8.29更新&quot;&gt;&lt;/a&gt;学习Markdown by NgaiYeanCoi 2023.8.29更新&lt;/h1&gt;
+      &lt;hr&gt;
+&lt;p&gt;此篇是由NgaiYeanCoi整理编写出的Markdown教程，如有错误的请指出。&lt;br&gt;Stayrabbit &amp;amp; NgaiYeanCoi是同一人。&lt;br&gt;全篇建议配合源代码一起阅读&lt;br&gt;&lt;span class=&quot;exturl&quot;&gt;&lt;a class=&quot;exturl__link&quot;   href=&quot;https://github.com/NgaiYeanCoi/NYC-Notes/blob/master/%E7%BC%96%E7%A8%8B%E7%B1%BB/Markdown/%E5%AD%A6%E4%B9%A0Markdown%E7%AC%94%E8%AE%B0.md?plain=1&quot; &gt;点我查看源码&lt;/a&gt;&lt;span class=&quot;exturl__icon&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;  &lt;/p&gt;
+
+        &lt;h2 id=&quot;一、前言&quot;   &gt;
+          &lt;a href=&quot;#一、前言&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;
+      
+        &lt;h3 id=&quot;1-1-关于Markdown&quot;   &gt;
+          &lt;a href=&quot;#1-1-关于Markdown&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#1-1-关于Markdown&quot; class=&quot;headerlink&quot; title=&quot;1.1 关于Markdown&quot;&gt;&lt;/a&gt;1.1 关于Markdown&lt;/h3&gt;
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Markdown是一种轻量标记语言,它可以让人们更容易读懂纯文本的文档说明&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Markdown编写的文档可以导出为HTML、World、图像、PDF 等多种格式的文档&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Markdown文档的后缀&lt;code&gt;.md&lt;/code&gt; &lt;code&gt;.markdown&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h3 id=&quot;1-2-Markdown的应用&quot;   &gt;
+          &lt;a href=&quot;#1-2-Markdown的应用&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#1-2-Markdown的应用&quot; class=&quot;headerlink&quot; title=&quot;1.2 Markdown的应用&quot;&gt;&lt;/a&gt;1.2 Markdown的应用&lt;/h3&gt;
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Markdown可以用来写笔记、电子书&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;目前很多网站都广泛使用Markdown来撰写帮助文档或者是用于论坛，例如：GitHub、简书等&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h3 id=&quot;1-3-Markdown的编辑器&quot;   &gt;
+          &lt;a href=&quot;#1-3-Markdown的编辑器&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#1-3-Markdown的编辑器&quot; class=&quot;headerlink&quot; title=&quot;1.3 Markdown的编辑器&quot;&gt;&lt;/a&gt;1.3 Markdown的编辑器&lt;/h3&gt;
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Markdown存在有多种多样的编辑器，并没有哪种编辑器更好的说法，只有适合自己的编辑器。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;常见的Markdown编辑器有&lt;strong&gt;Visual Studio Code&lt;/strong&gt;、&lt;strong&gt;Typora&lt;/strong&gt;、&lt;strong&gt;Obsidian&lt;/strong&gt;等&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+        &lt;h2 id=&quot;二、Markdown的语法&quot;   &gt;
+          &lt;a href=&quot;#二、Markdown的语法&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#二、Markdown的语法&quot; class=&quot;headerlink&quot; title=&quot;二、Markdown的语法&quot;&gt;&lt;/a&gt;二、Markdown的语法&lt;/h2&gt;
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Markdown 有着非常简洁的语法，不过由于它的自由性，Markdown 也产生了许多变体，如 GitHub Flavored Markdown (GFM) 和 Pandoc 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其他的暂且不讨论，先来看看Markdown 通用的基础语法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;以下的语法基于 &lt;strong&gt;VS Code&lt;/strong&gt; 与 &lt;strong&gt;Markdown Preview Enhanced 插件&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="study" scheme="https://blog.nyc1.xyz/categories/study/"/>
+    
+    <category term="tech" scheme="https://blog.nyc1.xyz/categories/tech/"/>
+    
+    
+  </entry>
+  
+</feed>
