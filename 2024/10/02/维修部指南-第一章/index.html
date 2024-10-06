@@ -1,13 +1,14 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="前言        介于我在国庆回家的路上在想着怎么样才能让自己的社团成员学习到维修的一些知识呢，我想到了写一篇blog来教你们如何快速的入门。 作为24届白云学院计协维修部的副部长，具备扎实的电脑维修知识和实践能力是作为维修部成员是必备的素质。我希望这一篇指南可以传承下去让白云学院每一届的维修部的同学都有所受益。 本指南将从电脑的基础知识入手，详细介绍电脑各个部件的功能与作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="白云学院维修部指南-第一章硬件性能的认识">
-<meta property="og:url" content="https://blog.nyc1.xyz/2024/10/02/%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%AD%A6%E9%99%A2%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E4%BC%9A%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">
+<meta property="og:url" content="https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">
 <meta property="og:site_name" content="NgaiYeanCoi&#39;s blog">
 <meta property="og:description" content="前言        介于我在国庆回家的路上在想着怎么样才能让自己的社团成员学习到维修的一些知识呢，我想到了写一篇blog来教你们如何快速的入门。 作为24届白云学院计协维修部的副部长，具备扎实的电脑维修知识和实践能力是作为维修部成员是必备的素质。我希望这一篇指南可以传承下去让白云学院每一届的维修部的同学都有所受益。 本指南将从电脑的基础知识入手，详细介绍电脑各个部件的功能与作">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/weixiu_xuan.jpg">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/woodbucket.png">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/fennuo.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/cpu.png">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/cpu-z.png">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/i3vsi5.png">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/core.png">
@@ -24,12 +25,22 @@
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/cpuz_jiagou.png">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/cpuz_cache.png">
 <meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/diannaoba.png">
-<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/diannaoba_cpu.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/diannaobacpu.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/cpu-z%E5%86%85%E5%AD%98.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/cpu-zspd.gif">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/task.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/%E5%AD%98%E5%82%A8.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/DDRVS.jpg">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/CMD.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/%E6%9C%80%E5%A4%A7%E5%86%85%E5%AD%98.gif">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/cpu-z%E5%86%85%E5%AD%98%E9%80%9A%E9%81%93.png">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/%E4%B8%BB%E6%9D%BF%E6%8F%92%E5%8F%8C%E9%80%9A%E9%81%93.jpg">
+<meta property="og:image" content="https://blog.nyc1.xyz/image/weixiu/Memory/%E4%B8%BB%E6%9D%BF%E6%8F%92%E4%BC%98%E5%85%88%E5%8F%8C%E9%80%9A%E9%81%93.jpg">
 <meta property="article:published_time" content="2024-10-01T20:34:55.000Z">
-<meta property="article:modified_time" content="2024-10-05T18:38:24.459Z">
+<meta property="article:modified_time" content="2024-10-06T08:00:13.339Z">
 <meta property="article:author" content="NgaiYeanCoi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.nyc1.xyz/image/weixiu/weixiu_xuan.jpg"><title>白云学院维修部指南-第一章硬件性能的认识 | NgaiYeanCoi's blog</title><link ref="canonical" href="https://blog.nyc1.xyz/2024/10/02/%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%AD%A6%E9%99%A2%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E4%BC%9A%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+<meta name="twitter:image" content="https://blog.nyc1.xyz/image/weixiu/weixiu_xuan.jpg"><title>白云学院维修部指南-第一章硬件性能的认识 | NgaiYeanCoi's blog</title><link ref="canonical" href="https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
@@ -53,7 +64,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="javascript:;" onclick="return false;"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a><div class="header-nav-submenu"><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/categories/study/"><span class="header-nav-submenu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-submenu-item__text">学习</span></a></div><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/categories/university/"><span class="header-nav-submenu-item__icon"><i class="fas fa-lightbulb"></i></span><span class="header-nav-submenu-item__text">大学</span></a></div></div></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/friends/"><span class="header-nav-menu-item__icon"><i class="fas fa-users"></i></span><span class="header-nav-menu-item__text">友情链接</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">NgaiYeanCoi's Blog</div><div class="header-banner-info__subtitle">一位梦想成为大佬的彩笔</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">白云学院维修部指南-第一章硬件性能的认识</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-10-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-10-06</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">3.8k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">20分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="javascript:;" onclick="return false;"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a><div class="header-nav-submenu"><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/categories/study/"><span class="header-nav-submenu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-submenu-item__text">学习</span></a></div><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/categories/university/"><span class="header-nav-submenu-item__icon"><i class="fas fa-lightbulb"></i></span><span class="header-nav-submenu-item__text">大学</span></a></div></div></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/friends/"><span class="header-nav-menu-item__icon"><i class="fas fa-users"></i></span><span class="header-nav-menu-item__text">友情链接</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">NgaiYeanCoi's Blog</div><div class="header-banner-info__subtitle">一位梦想成为大佬的彩笔</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">白云学院维修部指南-第一章硬件性能的认识</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-10-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-10-06</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">5.3k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">29分</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body">
         <h2 id="前言"   >
           <a href="#前言" class="heading-link"><i class="fas fa-link"></i></a><a href="#前言" class="headerlink" title="前言"></a>前言</h2>
       <ul>
@@ -126,13 +137,19 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
           src="/images/loading.svg" data-src="/../image/weixiu/fennuo.png"  alt="图片">
       </p>
 <ul>
-<li><p>要想了解CPU的性能参数有哪些，我们可以下载<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.cpuid.com/softwares/cpu-z.html" >CPU-Z</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>来查询自己的CPU型号来一览CPU的性能参数，不仅如此用这个工具还可以查询到主板、内存、SPD(可以看内存的一些预设以及插槽)、显卡还能用这个软件做一些简单的跑分来对比同型号的性能差异来检测出你这台电脑CPU性能的释放是否正常。</p>
+<li>一般长这样</li>
+</ul>
+<p> 
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/cpu.png"  alt="图片">
+      </p>
+<ul>
+<li>要想了解CPU的性能参数有哪些，我们可以下载<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.cpuid.com/softwares/cpu-z.html" >CPU-Z</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>来查询自己的CPU型号来一览CPU的性能参数，不仅如此用这个工具还可以查询到主板、内存、SPD(可以看内存的一些预设以及插槽)、显卡还能用这个软件做一些简单的跑分来对比同型号的性能差异来检测出你这台电脑CPU性能的释放是否正常。</li>
+</ul>
 <p>
         <img   class="lazyload lazyload-gif"
           src="/images/loading.svg" data-src="/../image/weixiu/cpu-z.png"  alt="CPU-z图片">
       </p>
-</li>
-</ul>
 
         <h4 id="CPU的命名规则-Intel"   >
           <a href="#CPU的命名规则-Intel" class="heading-link"><i class="fas fa-link"></i></a><a href="#CPU的命名规则-Intel" class="headerlink" title="CPU的命名规则-Intel"></a>CPU的命名规则-Intel</h4>
@@ -410,7 +427,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
 </ul>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="/../image/weixiu/diannaoba_cpu.png"  alt="图片">
+          src="/images/loading.svg" data-src="/../image/weixiu/diannaobacpu.png"  alt="图片">
       </p>
 <ul>
 <li>选购CPU或者其他硬件的时候都离不开以下几点。<ol>
@@ -421,7 +438,157 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
 </ol>
 </li>
 </ul>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://blog.nyc1.xyz">NgaiYeanCoi</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://blog.nyc1.xyz/2024/10/02/%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%AD%A6%E9%99%A2%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E4%BC%9A%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/">https://blog.nyc1.xyz/2024/10/02/%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%AD%A6%E9%99%A2%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E4%BC%9A%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2024/04/21/AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E6%9C%9F%E4%B8%AD%E6%8C%87%E5%8D%97/"><span class="paginator-prev__text">AI与区块链选修期中指南</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">
+
+        <h4 id="CPU的组装"   >
+          <a href="#CPU的组装" class="heading-link"><i class="fas fa-link"></i></a><a href="#CPU的组装" class="headerlink" title="CPU的组装"></a>CPU的组装</h4>
+      <p>可以先看视频的介绍后续可以带你们实操。</p>
+
+        <h5 id="Intel-CPU安装"   >
+          <a href="#Intel-CPU安装" class="heading-link"><i class="fas fa-link"></i></a><a href="#Intel-CPU安装" class="headerlink" title="Intel CPU安装"></a>Intel CPU安装</h5>
+      <p>【【装机教程P3】intel CPU的安装方法】 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ue4y1T7KD/?share_source=copy_web&vd_source=141efb301e87945ebfb614f57c347f88" >https://www.bilibili.com/video/BV1Ue4y1T7KD/?share_source=copy_web&amp;vd_source=141efb301e87945ebfb614f57c347f88</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=648624234&bvid=BV1Ue4y1T7KD&cid=918302942&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+
+        <h5 id="AMD-CPU安装"   >
+          <a href="#AMD-CPU安装" class="heading-link"><i class="fas fa-link"></i></a><a href="#AMD-CPU安装" class="headerlink" title="AMD CPU安装"></a>AMD CPU安装</h5>
+      <p>【【装机教程P2】AMD CPU的安装方法】 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1hg411J7Zv/?share_source=copy_web&vd_source=141efb301e87945ebfb614f57c347f88" >https://www.bilibili.com/video/BV1hg411J7Zv/?share_source=copy_web&amp;vd_source=141efb301e87945ebfb614f57c347f88</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=518541177&bvid=BV1hg411J7Zv&cid=918301379&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+<hr>
+
+        <h3 id="内存（RAM）"   >
+          <a href="#内存（RAM）" class="heading-link"><i class="fas fa-link"></i></a><a href="#内存（RAM）" class="headerlink" title="内存（RAM）"></a>内存（RAM）</h3>
+      <ul>
+<li><p>内存第一个作用是用来暂存处理器（CPU）的运算数据，不管是正在处理，还是将要处理，亦或者是处理完成的数据，都会同时存在于内存里。</p>
+</li>
+<li><p>第二个作用是和固态硬盘、机械硬盘等外部存储器交换数据。内存就好比中转站一样拿来暂时保存这些要用到的数据，因为CPU处理的速度太快，而外存的速度对于CPU来说很慢为了提高工作效率就拿内存来做之间沟通的桥梁。</p>
+</li>
+</ul>
+<p>想要了解内存的性能参数同样我们可以用<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.cpuid.com/softwares/cpu-z.html" >CPU-Z</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>中的<strong>内存一栏</strong>来查询。</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/cpu-z%E5%86%85%E5%AD%98.png"  alt="图片">
+      </p>
+<p>以及用<strong>SPD（串行存在检测）</strong>一栏用来保存一些厂商内存频率、CL值等等的预设的后面会再介绍。我们可以用这一栏看我们主板上的插槽所对应的内存参数</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/cpu-zspd.gif"  alt="图片">
+      </p>
+<p>可以看到我这里在插槽2与4查了两根DDR4 8G 3200Mhz的内存，还有两个插槽是空的。由此可以看得出你内存的可用插槽有多少，方便后续升级。</p>
+
+        <h4 id="内存？外存？"   >
+          <a href="#内存？外存？" class="heading-link"><i class="fas fa-link"></i></a><a href="#内存？外存？" class="headerlink" title="内存？外存？"></a>内存？外存？</h4>
+      <ul>
+<li><p>相信仍然有很多同学容易混淆这两者，内存指的是随机存储器，断电后会丢失数据，作为CPU与外存沟通之间的桥梁。我们可以简单的用任务管理器去查看内存的简要信息。<br>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/task.png"  alt="图片">
+      </p>
+</li>
+<li><p>外存又名存储是真正可以拿来长期保存数据的容器，就是我们常说的固态硬盘、机械硬盘、软盘等等。<br>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/%E5%AD%98%E5%82%A8.png"  alt="图片">
+      </p>
+</li>
+</ul>
+
+        <h4 id="内存的性能参数"   >
+          <a href="#内存的性能参数" class="heading-link"><i class="fas fa-link"></i></a><a href="#内存的性能参数" class="headerlink" title="内存的性能参数"></a>内存的性能参数</h4>
+      <p>内存的主要参数有DDR几、容量、频率、接口和内存时序。以我的内存为例<code>DDR4 16G 3200Mhz CL18</code>。</p>
+
+        <h5 id="DDR"   >
+          <a href="#DDR" class="heading-link"><i class="fas fa-link"></i></a><a href="#DDR" class="headerlink" title="DDR"></a>DDR</h5>
+      <ul>
+<li>同样我们用的内存也经过了很多次改良迭代，包括DDR、DDR2、DDR3、DDR4和最新的DDR5。每一代DDR内存都提供了更高的频率和更低的功耗，从而提高了计算机的性能。</li>
+</ul>
+<p>那么有什么区别呢？</p>
+<ol>
+<li>每一代内存的缺口处位置都不同（我们常称防呆控孔）<br>  
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/DDRVS.jpg"  alt="图片">
+      </li>
+<li>降低的电压、延迟，提高频率、带宽</li>
+</ol>
+<ul>
+<li>DDR：第一代DDR内存，频率通常在200MHz左右。（已淘汰）<br>DDR2：第二代DDR内存，频率通常在400MHz左右，并引入了更低的电压。（已淘汰）<br>DDR3：第三代DDR内存，频率通常在800MHz以上，并进一步降低了电压。（已淘汰很少见）<br>DDR4：第四代DDR内存，频率通常在1600MHz以上，并继续降低电压。（主流）<br>DDR5：第五代DDR内存，频率通常在3200MHz以上，并引入了新的内存架构和更高的带宽。（未来主流）</li>
+</ul>
+
+        <h6 id="DDR4对比DDR5的拓展学习"   >
+          <a href="#DDR4对比DDR5的拓展学习" class="heading-link"><i class="fas fa-link"></i></a><a href="#DDR4对比DDR5的拓展学习" class="headerlink" title="DDR4对比DDR5的拓展学习"></a>DDR4对比DDR5的拓展学习</h6>
+      <ul>
+<li>这里我们只对DDR1、2、3代作为了解，主流的DDR4、DDR5才是我们接触最多的。</li>
+</ul>
+<p>【最新的DDR5内存比DDR4强多少？单条真的是双通道吗？【翼王】】 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1TS4y1N7ee/?share_source=copy_web&vd_source=141efb301e87945ebfb614f57c347f88" >https://www.bilibili.com/video/BV1TS4y1N7ee/?share_source=copy_web&amp;vd_source=141efb301e87945ebfb614f57c347f88</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=683135076&bvid=BV1TS4y1N7ee&cid=574672119&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+<p>【不是贵的才是对的 DDR5 VS DDR4内存超频游戏测试 20款游戏3种分辨率告诉你搭配12代酷睿内存超频能为游戏带来多少提升？】 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Gr4y1i7vN/?share_source=copy_web&vd_source=141efb301e87945ebfb614f57c347f88" >https://www.bilibili.com/video/BV1Gr4y1i7vN/?share_source=copy_web&amp;vd_source=141efb301e87945ebfb614f57c347f88</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=765692442&bvid=BV1Gr4y1i7vN&cid=484686310&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+<hr>
+
+        <h5 id="容量"   >
+          <a href="#容量" class="heading-link"><i class="fas fa-link"></i></a><a href="#容量" class="headerlink" title="容量"></a>容量</h5>
+      <p>顾名思义越大越好，当然也就越贵，内存的大小会直接影响系统的整体性能，对于计算机的专业的同学来说使用<code>windows 11</code>的操作系统，考虑到后续你们要玩虚拟机、要修图、要剪辑什么的，我会推荐你们买16G以上的内存（8Gx2组双通道或以上）。</p>
+<ul>
+<li>可以用<code>CPU-Z的SPD</code>来查询你电脑有几个插槽。</li>
+<li>在CMD下查询主板最大内存支持，具体操作如下：<ol>
+<li>在电脑Win+R键呼出运行，输入<code>cmd</code>回车；<br>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/CMD.png"  alt="图片">
+      </li>
+<li>敲入<code>wmic memphysical get maxcapacity</code> 得到的是以KB为单位<br> 
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/%E6%9C%80%E5%A4%A7%E5%86%85%E5%AD%98.gif"  alt="图片">
+      </li>
+<li>例如我这里的是134217728KB把它转换成GB就是134217728&#x2F;1024得到MB再&#x2F;1024得到128GB，那就是说我电脑主板支持的最大容量是128GB。</li>
+</ol>
+</li>
+</ul>
+
+        <h5 id="通道数"   >
+          <a href="#通道数" class="heading-link"><i class="fas fa-link"></i></a><a href="#通道数" class="headerlink" title="通道数"></a>通道数</h5>
+      <ul>
+<li>单条32G是不是一定比16G（8Gx2）快？，如果是相同频率，和延迟的情况下，论容量而言32G可以同时放入更多的需要被加载的数据到内存。但是单通道（64bit）和双通道（128<del>256bit），双通道可以完整的让CPU的发挥出它该有的性能，理论上是有2</del>4倍的性能提升，所以我更推荐你们组双通道，容量够用就好了。</li>
+</ul>
+
+        <h6 id="通道数的拓展学习"   >
+          <a href="#通道数的拓展学习" class="heading-link"><i class="fas fa-link"></i></a><a href="#通道数的拓展学习" class="headerlink" title="通道数的拓展学习"></a>通道数的拓展学习</h6>
+      <p>【【硬核科普】为什么买内存推荐买8GX2而不是16GX1？详解内存双通道工作原理与作用】 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1UJ411B7mD/?share_source=copy_web&vd_source=141efb301e87945ebfb614f57c347f88" >https://www.bilibili.com/video/BV1UJ411B7mD/?share_source=copy_web&amp;vd_source=141efb301e87945ebfb614f57c347f88</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=77644266&bvid=BV1UJ411B7mD&cid=132824884&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+        <h6 id="怎么看自己是不是双通道？"   >
+          <a href="#怎么看自己是不是双通道？" class="heading-link"><i class="fas fa-link"></i></a><a href="#怎么看自己是不是双通道？" class="headerlink" title="怎么看自己是不是双通道？"></a>怎么看自己是不是双通道？</h6>
+      <ul>
+<li>我们可以用<code>CPU-Z</code>内存栏查看，例如我的电脑就是跑在2x64bit&#x3D;128bit的双通道下。<br>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/cpu-z%E5%86%85%E5%AD%98%E9%80%9A%E9%81%93.png"  alt="图片">
+      </li>
+</ul>
+
+        <h6 id="主板上那么多插槽怎么插才能组双通道呢？"   >
+          <a href="#主板上那么多插槽怎么插才能组双通道呢？" class="heading-link"><i class="fas fa-link"></i></a><a href="#主板上那么多插槽怎么插才能组双通道呢？" class="headerlink" title="主板上那么多插槽怎么插才能组双通道呢？"></a>主板上那么多插槽怎么插才能组双通道呢？</h6>
+      <p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/%E4%B8%BB%E6%9D%BF%E6%8F%92%E5%8F%8C%E9%80%9A%E9%81%93.jpg"  alt="图片">
+      </p>
+<ul>
+<li>要插双通道就得要准备好两条最好是同型号同参数的内存，不同的参数可能会出问题。</li>
+<li>如果要插双通道，通常都是插1-2插槽或者3-4插槽这样插。</li>
+</ul>
+<p><strong>需要注意的是</strong>：不同主板的最推荐的插法不一，请按照主板的说明来插是最佳的。例如以下图片的主板。</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="/../image/weixiu/Memory/%E4%B8%BB%E6%9D%BF%E6%8F%92%E4%BC%98%E5%85%88%E5%8F%8C%E9%80%9A%E9%81%93.jpg"  alt="图片">
+      </p>
+
+        <h6 id="内存条的安装"   >
+          <a href="#内存条的安装" class="heading-link"><i class="fas fa-link"></i></a><a href="#内存条的安装" class="headerlink" title="内存条的安装"></a>内存条的安装</h6>
+      <p>【【装机教程P4】内存条的安装方法】 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1fD4y1h7aK/?share_source=copy_web&vd_source=141efb301e87945ebfb614f57c347f88" >https://www.bilibili.com/video/BV1fD4y1h7aK/?share_source=copy_web&amp;vd_source=141efb301e87945ebfb614f57c347f88</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=733545707&bvid=BV1fD4y1h7aK&cid=918305407&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://blog.nyc1.xyz">NgaiYeanCoi</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/">https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2024/04/21/AI%E4%B8%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E6%9C%9F%E4%B8%AD%E6%8C%87%E5%8D%97/"><span class="paginator-prev__text">AI与区块链选修期中指南</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">
           前言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E4%BC%9A%E7%BB%B4%E4%BF%AE%E9%83%A8%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.1.</span> <span class="toc-text">
           计算机协会维修部介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%9B%A2%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%BE%97%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.0.2.</span> <span class="toc-text">
           加入社团你可以获得什么？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90%E2%80%93%E5%A6%82%E4%BD%95%E7%9C%8B%E6%87%82%E7%94%B5%E8%84%91%E7%9A%84%E6%80%A7%E8%83%BD%E5%8F%82%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">
@@ -438,7 +605,21 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></he
           CPU的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E4%BA%8ETDP%E7%9A%84%E6%8B%93%E5%B1%95%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">
           关于TDP的拓展学习</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CPU%E7%9A%84%E9%80%89%E6%8B%A9%E5%92%8C%E5%AF%B9%E6%AF%94%E2%80%93%E5%A4%A9%E6%A2%AF%E5%9B%BE"><span class="toc-number">2.2.3.</span> <span class="toc-text">
           CPU的选择和对比–天梯图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%82%E5%9C%BA%E4%B8%8A%E5%85%85%E6%96%A5%E7%9D%80%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84CPU%E4%B9%B0%E5%93%AA%E4%B8%80%E4%B8%AA%E5%A5%BD%E5%91%A2%EF%BC%9F-%E9%80%89%E8%B4%AD%E5%BB%BA%E8%AE%AE"><span class="toc-number">2.2.4.</span> <span class="toc-text">
-          市场上充斥着各种各样的CPU买哪一个好呢？-选购建议</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/image/icon.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">一位梦想成为大佬的彩笔</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/NgaiYeanCoi" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.xiaohongshu.com/user/profile/603bbc32000000000100a2cf" target="_blank" rel="noopener" data-popover="小红书" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">红</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">10</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="javascript:;"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2024</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>NgaiYeanCoi</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v7.0.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"><div class="search-btns">使用搜索：<span class="search-btns-item search-btns-item--google"><i class="fab fa-google"></i>谷歌</span><span class="search-btns-item search-btns-item--bing"><i></i>必应</span><span class="search-btns-item search-btns-item--baidu"><i></i>百度</span></div></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
+          市场上充斥着各种各样的CPU买哪一个好呢？-选购建议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CPU%E7%9A%84%E7%BB%84%E8%A3%85"><span class="toc-number">2.2.5.</span> <span class="toc-text">
+          CPU的组装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Intel-CPU%E5%AE%89%E8%A3%85"><span class="toc-number">2.2.5.1.</span> <span class="toc-text">
+          Intel CPU安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#AMD-CPU%E5%AE%89%E8%A3%85"><span class="toc-number">2.2.5.2.</span> <span class="toc-text">
+          AMD CPU安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AD%98%EF%BC%88RAM%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">
+          内存（RAM）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E5%AD%98%EF%BC%9F%E5%A4%96%E5%AD%98%EF%BC%9F"><span class="toc-number">2.3.1.</span> <span class="toc-text">
+          内存？外存？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E7%9A%84%E6%80%A7%E8%83%BD%E5%8F%82%E6%95%B0"><span class="toc-number">2.3.2.</span> <span class="toc-text">
+          内存的性能参数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#DDR"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">
+          DDR</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#DDR4%E5%AF%B9%E6%AF%94DDR5%E7%9A%84%E6%8B%93%E5%B1%95%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.3.2.1.1.</span> <span class="toc-text">
+          DDR4对比DDR5的拓展学习</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%B9%E9%87%8F"><span class="toc-number">2.3.2.2.</span> <span class="toc-text">
+          容量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%9A%E9%81%93%E6%95%B0"><span class="toc-number">2.3.2.3.</span> <span class="toc-text">
+          通道数</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%80%9A%E9%81%93%E6%95%B0%E7%9A%84%E6%8B%93%E5%B1%95%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.3.2.3.1.</span> <span class="toc-text">
+          通道数的拓展学习</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E7%9C%8B%E8%87%AA%E5%B7%B1%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%8C%E9%80%9A%E9%81%93%EF%BC%9F"><span class="toc-number">2.3.2.3.2.</span> <span class="toc-text">
+          怎么看自己是不是双通道？</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%B8%BB%E6%9D%BF%E4%B8%8A%E9%82%A3%E4%B9%88%E5%A4%9A%E6%8F%92%E6%A7%BD%E6%80%8E%E4%B9%88%E6%8F%92%E6%89%8D%E8%83%BD%E7%BB%84%E5%8F%8C%E9%80%9A%E9%81%93%E5%91%A2%EF%BC%9F"><span class="toc-number">2.3.2.3.3.</span> <span class="toc-text">
+          主板上那么多插槽怎么插才能组双通道呢？</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E6%9D%A1%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">2.3.2.3.4.</span> <span class="toc-text">
+          内存条的安装</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/image/icon.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">一位梦想成为大佬的彩笔</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/NgaiYeanCoi" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.xiaohongshu.com/user/profile/603bbc32000000000100a2cf" target="_blank" rel="noopener" data-popover="小红书" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">红</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">10</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="javascript:;"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2024</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>NgaiYeanCoi</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v7.0.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"><div class="search-btns">使用搜索：<span class="search-btns-item search-btns-item--google"><i class="fab fa-google"></i>谷歌</span><span class="search-btns-item search-btns-item--bing"><i></i>必应</span><span class="search-btns-item search-btns-item--baidu"><i></i>百度</span></div></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
 
@@ -781,7 +962,7 @@ if (Array.isArray(assistSearchList)) {
   quicklink({
     timeout: '10000',
     priority: true,
-    ignores: [uri => uri.includes('#'), uri => uri === 'https://blog.nyc1.xyz/2024/10/02/%E5%B9%BF%E4%B8%9C%E7%99%BD%E4%BA%91%E5%AD%A6%E9%99%A2%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%8F%E4%BC%9A%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
+    ignores: [uri => uri.includes('#'), uri => uri === 'https://blog.nyc1.xyz/2024/10/02/%E7%BB%B4%E4%BF%AE%E9%83%A8%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%80%E7%AB%A0/', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
   });
 }
 
