@@ -162,7 +162,7 @@
     <link href="https://blog.nyc1.xyz/2024/04/20/%E5%85%B3%E4%BA%8ELiunx%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E4%B8%8E%E5%8A%A0%E5%9B%BA/"/>
     <id>https://blog.nyc1.xyz/2024/04/20/%E5%85%B3%E4%BA%8ELiunx%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E4%B8%8E%E5%8A%A0%E5%9B%BA/</id>
     <published>2024-04-20T07:22:10.000Z</published>
-    <updated>2025-02-14T10:51:21.198Z</updated>
+    <updated>2025-02-14T11:18:51.591Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;   &gt;
@@ -196,7 +196,7 @@
           &lt;a href=&quot;#Linux-防火墙配置&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#Linux-防火墙配置&quot; class=&quot;headerlink&quot; title=&quot;Linux 防火墙配置&quot;&gt;&lt;/a&gt;Linux 防火墙配置&lt;/h3&gt;
       &lt;ul&gt;
 &lt;li&gt;开启防火墙，将不必要的端口关闭，缩小需要防范的范围。&lt;/li&gt;
-&lt;li&gt;关于如何配置可以看我这篇文章&lt;a href=&quot;https://blog.nyc1.xyz/2024/03/18/UFW%E9%98%B2%E7%81%AB%E5%A2%99/&quot;&gt;UFW防火墙&lt;/a&gt;，里面有详细的介绍。&lt;/li&gt;
+&lt;li&gt;关于如何配置可以看我这篇文章&lt;a href=&quot;https://blog.nyc1.xyz/2024/03/18/Linux%20UFW%E9%98%B2%E7%81%AB%E5%A2%99%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&quot;&gt;Linux UFW防火墙使用教程&lt;/a&gt;，里面有详细的介绍。&lt;/li&gt;
 &lt;/ul&gt;
 
         &lt;h3 id=&quot;Linux-SSH服务安全&quot;   &gt;
